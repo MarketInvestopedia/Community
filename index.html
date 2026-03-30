@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMC Insights | Live Gold (XAUUSD) Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/font-awesome.min.css">
+    
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --secondary-blue: #eef4ff;
+            --text-dark: #1a1a1a;
+            --text-light: #4a4a4a;
+            --white: #ffffff;
+            --accent-blue: #007bff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            padding: 100px 0 80px;
+            text-align: center;
+            background: linear-gradient(180deg, var(--secondary-blue) 0%, var(--white) 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 18px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            background-color: #128C7E;
+        }
+
+        .trust-lines {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            font-size: 0.9rem;
+            color: var(--primary-blue);
+            font-weight: 600;
+        }
+
+        /* --- Sections General --- */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--primary-blue);
+            margin-bottom: 40px;
+        }
+
+        /* --- Why Join Section --- */
+        .why-join {
+            background-color: var(--white);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            padding: 30px;
+            border-radius: 12px;
+            background: var(--white);
+            border: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: var(--accent-blue);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .card i {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        /* --- UAE/Interactive Sections --- */
+        .blue-bg {
+            background-color: var(--secondary-blue);
+            border-radius: 20px;
+            padding: 60px 40px;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .list-item i {
+            color: #25D366;
+        }
+
+        /* --- Compliance --- */
+        .compliance {
+            font-size: 0.85rem;
+            color: #888;
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #eee;
+        }
+
+        /* --- Sticky Footer --- */
+        .sticky-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: var(--primary-blue);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .sticky-footer a {
+            background: white;
+            color: var(--primary-blue);
+            padding: 5px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            section { padding: 50px 0; }
+            .sticky-footer { flex-direction: column; gap: 10px; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container" data-aos="fade-up">
+            <h1 style="color: #002e5d;">BEIRMAN CAPITAL</h1>
+            <h1>Learn How Gold (XAUUSD) Moves — Live</h1>
+            <p>Join our interactive online sessions where market behaviour is explained in real-time, in a simple and practical way.</p>
+            
+            <a href="https://wa.me/YOURNUMBER" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> 👉 Join WhatsApp Community
+            </a>
+            <p style="margin-top: 10px; font-size: 0.8rem; color: #666;">Limited access to maintain quality interaction</p>
+
+            <div class="trust-lines">
+                <span class="trust-item"><i class="fas fa-check-circle"></i> Beginner Friendly</span>
+                <span class="trust-item"><i class="fas fa-check-circle"></i> Live Market Explanation</span>
+                <span class="trust-item"><i class="fas fa-check-circle"></i> Interactive Learning</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title" data-aos="fade-up">Why Traders Are Joining BMC Insights</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">Many traders struggle because they don’t fully understand how the market works. At BMC Insights, we focus on reality, not just theory.</p>
+        
+        <div class="grid">
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-chart-line"></i>
+                <h3>Price Movements</h3>
+                <p>Understand the 'Why' behind every candle movement on the chart.</p>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-bolt"></i>
+                <h3>Real-time Reactions</h3>
+                <p>Observe how the market reacts to news and levels as it happens.</p>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-brain"></i>
+                <h3>Practical Learning</h3>
+                <p>Skip the complex jargon. Learn the market in a simple, step-by-step way.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">What You Will Learn</h2>
+            <div class="grid" style="grid-template-columns: 1fr 1fr;">
+                <div data-aos="fade-right">
+                    <div class="list-item"><i class="fas fa-check"></i> How gold (XAUUSD) moves in real-time</div>
+                    <div class="list-item"><i class="fas fa-check"></i> Basics of price action</div>
+                    <div class="list-item"><i class="fas fa-check"></i> Market behaviour and reactions</div>
+                </div>
+                <div data-aos="fade-left">
+                    <div class="list-item"><i class="fas fa-check"></i> Trading discipline and mindset</div>
+                    <div class="list-item"><i class="fas fa-check"></i> How to observe the market correctly</div>
+                    <div class="list-item"><i class="fas fa-check"></i> Trusted by 1000+ learners globally</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="blue-bg" data-aos="fade-up">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2 style="color: var(--primary-blue); margin-bottom: 15px;">Not Just Watching — You Can Ask</h2>
+                <p>This is a live, interactive session designed for traders in the UAE and GCC regions.</p>
+            </div>
+            <div class="grid">
+                <div>
+                    <h4 style="margin-bottom: 15px; color: var(--primary-blue);">Interactive Features:</h4>
+                    <p>• Ask your questions live</p>
+                    <p>• Clear your doubts instantly</p>
+                    <p>• Understand concepts step-by-step</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 15px; color: var(--primary-blue);">Built for the UAE:</h4>
+                    <p>✔ Easy to understand language</p>
+                    <p>✔ Flexible learning environment</p>
+                    <p>✔ Suitable for all experience levels</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="text-align: center;">
+        <div data-aos="zoom-out">
+            <h2 class="section-title">Start Learning the Market the Right Way</h2>
+            <p style="margin-bottom: 30px;">If you want to understand how the market actually works — this is the right place to begin.</p>
+            <a href="https://wa.me/YOURNUMBER" class="btn-whatsapp">
+                👉 Join BMC Insights on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer class="compliance">
+        <div class="container">
+            <p><strong>Compliance Notice:</strong> This session is for educational purposes only. We do not provide financial advice, investment recommendations, or guaranteed results. Trading involves risk.</p>
+            <p style="margin-top: 10px;">&copy; 2026 Beirman Capital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="sticky-footer">
+        Join Now & Start Learning Live 
+        <a href="https://wa.me/YOURNUMBER">JOIN NOW</a>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
